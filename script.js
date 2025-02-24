@@ -1,8 +1,9 @@
 //your JS code here. If required.
-const Text=document.querySelector("#status");
-const Button=document.querySelector("#enterBtn");
-const heading=document.createElement("h1");
-heading.innerHTML="Entered Metaverse";
-Button.addEventListener('click',()=>{
-	Text.parentNode.replaceChild(heading,Text);
+const status=document.querySelector("#status");
+const enterBtn=document.querySelector("#enterBtn");
+
+enterBtn.addEventListener('click',()=>{
+     const heading=document.createElement("h1");
+     heading.textContent="Entered Metaverse";
+	status.parentNode.replaceChild(heading,status);
 })
