@@ -4,6 +4,6 @@ const enterBtn=document.getElementById("enterBtn");
 
 enterBtn.addEventListener('click',()=>{
      const heading=document.createElement("h1");
-     heading.textContent="Entered Metaverse";
+    statusParagraph.innerHTML = "<h1>Entered Metaverse</h1>";
 	status.parentNode.replaceChild(heading,status);
 })
